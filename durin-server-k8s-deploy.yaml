@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: durin-deployment
+  labels:
+    app: durin-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: durin-server
+  template:
+    metadata:
+      labels:
+        app: durin-server
+    spec:
+      containers:
+      - name: durin-server
+        image: durin/durin-server
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000

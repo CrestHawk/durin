@@ -1,16 +1,17 @@
 {
   "name": "durin",
   "version": "1.0.0",
-  "description": "A simple client and server api I'm using to test and practice DevOps operations",
-  "main": "./dist/app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./durin-server/dist/app && echo Server Started! Port 3000"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CrestHawk/durin.git"
   },
-  "author": "Tom Davies",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CrestHawk/durin/issues"
